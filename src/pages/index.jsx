@@ -3,7 +3,7 @@ import React from "react";
 import { Button, Img, Text } from "components";
 import HomeLink from "components/HomeLink";
 
-const Home1Page = () => {
+const HomePage = () => {
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-poppins items-center justify-end mx-auto pt-2 w-full">
@@ -158,4 +158,4 @@ const Home1Page = () => {
   );
 };
 
-export default Home1Page;
+export default HomePage;
