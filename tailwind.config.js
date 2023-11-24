@@ -1,0 +1,58 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        cyan: { A400: "#00d8ff" },
+        blue: { A700: "#2965f1" },
+        red: { 400: "#f35045", 500: "#f03c2e", 800: "#cd201f" },
+        light_blue: { 400: "#31c5f0", 500: "#00adef", "400_01": "#1abcfe" },
+        amber: {
+          400: "#ffc91d",
+          500: "#fbbc09",
+          A200: "#ffd242",
+          A400: "#ffc600",
+        },
+        green: { A400: "#0acf83" },
+        black: { 900: "#000000" },
+        deep_orange: {
+          300: "#ff7262",
+          500: "#f16529",
+          600: "#f24e1e",
+          700: "#e44d26",
+          "600_01": "#f1511b",
+        },
+        light_green: { 600: "#80cc28" },
+        blue_gray: { 100: "#cccccc", 800: "#353564" },
+        gray: {
+          100: "#f7f7f4",
+          200: "#efeeea",
+          900: "#141414",
+          "200_01": "#ebebeb",
+          "900_02": "#001d26",
+          "900_03": "#261300",
+          "900_01": "#290132",
+        },
+        deep_purple: { A200: "#a259ff" },
+        indigo: {
+          50: "#e9e9ff",
+          200: "#afafde",
+          500: "#3775a9",
+          600: "#485a96",
+          "600_01": "#2f6491",
+          A700: "#264de4",
+        },
+        orange: { 700: "#ff7c00" },
+        white: { A700: "#ffffff" },
+      },
+      fontFamily: { poppins: "Poppins" },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
